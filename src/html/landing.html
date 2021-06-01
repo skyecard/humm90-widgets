@@ -1,0 +1,460 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="../styles/landing.min.css"> -->
+    <link rel="stylesheet" href="../styles/landing.css">
+</head>
+
+<body>
+    <div class="skye-size-container">
+        <div class="top-banner-container padding-top-1">
+            <h2 class="skye-size-header">We’ve partnered with Humm90 Mastercard® to allow you to shop Interest Free</h2>
+            <p>
+                <ul class="top-banner-list">
+                    <li><img src="../images/icon_tick_box.png"><span>No Deposit</span></li>
+                    <li><img src="../images/icon_tick_box.png"><span>Repay extra any time</span></li>
+                    <li><img src="../images/icon_tick_box.png"><span>Reusable account</span></li>
+                    <li><img src="../images/icon_tick_box.png"><span>Up to $50,000</span></li>
+                </ul>
+            </p>
+            <br/>
+            <p style="width: 100%; flex: 1"><a id="button" class="button not-active static borderless" onclick="openSkye()">APPLY NOW</a></p>
+            <br/>
+        </div>
+
+        <!-- Slideshow container -->
+        <div class="skye-steps-container">
+            <h2>3 steps to apply</h2>
+            <div class="skye-steps-inner">
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img src="../images/humm90/apply_347x347.png">
+                </div>
+                <div class="mySlides fade">
+                    <img src="../images/humm90/activate_347x347.png">
+                </div>
+                <div class="mySlides fade">
+                    <img id="skyeChannel" src="../images/humm90/add-to-cart-and-check-out_347x347.png">
+                </div>
+
+                <!-- Next button -->
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <ul class="skye-steps-process">
+                    <li class="dot" onclick="currentSlide(1)"><div class="apply"><p class="count">1</p><p class="span-text">APPLY</p></div></li>
+                    <li class="dot" onclick="currentSlide(2)"><div class="activate"><p class="count">2</p><p class="span-text">ACTIVATE</p></div></li>
+                    <li class="dot" onclick="currentSlide(3)"><div class="shop"><p class="count">3</p><p class="span-text">SHOP</p></div></li>
+                </ul>
+            </div>
+            <br>
+            <p style="width: 100%; flex: 1"><a id="button" class="button static borderless" onclick="openSkye()">APPLY NOW</a></p>
+        </div>
+        
+        <div class="skye-approved-container">
+            <div class="skye-approved-banner padding-top-1">
+                <h2>What happens when I'm approved?</h2>
+                <p>Once approved with Humm90, you’ll receive a Humm90 Mastercard which gives you access to:</p>
+            </div>
+            <div class="skye-container">
+                <div class="info-snippet-container">
+                    <div class="skye-img-container">
+                        <img class="img-fluid" src="../images/humm90/calendar_417x417.png">
+                    </div>
+                    <div class="skye-text-container">
+                        <h1 class="skye-text-h1">110 days breathing space</h1>
+                        <div class="skye-text-small">Up to 110 days Interest Free on Mastercard transactions </div>
+                    </div>
+                </div>
+                <div class="info-snippet-container">
+                    <div class="skye-img-container">
+                        <img class="img-fluid" src="../images/humm90/nofees_428x428.png">
+                    </div>
+                    <div class="skye-text-container">
+                        <h1 class="skye-text-h1">No foreign transaction fees</h1>
+                        <div class="skye-text-small">No foreign transaction fees for online and overseas purchases</div>
+                    </div>
+                </div>
+                <!-- <div class="info-snippet-container">
+                    <div class="skye-img-container">
+                        <img class="img-fluid" src="../images/MotionCode.png">
+                    </div>
+                    <div class="skye-text-container">
+                        <h1 class="skye-text-h1">MOTION CODE™</h1>
+                        <div class="skye-text-small">The first credit card with MOTION CODE™ technology in Australia</div>
+                    </div>
+                </div> -->
+            </div>
+            <div class="controls" id="controls">
+                <a id="button" class="button borderless static" onclick="openSkye()">APPLY NOW</a>
+            </div>
+        </div>
+        <div class="skye-help-container">
+            <h3>Help</h3>
+            <p>Check out some of our frequently asked questions</p>
+            <div class="general-terms-wrapper">
+                <h2>General terms</h2>
+                <div class="accordion vertical">
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="checkbox-1" name="checkbox-accordion" />
+                            <label for="checkbox-1">Who can apply for a Humm90 Mastercard?</label>
+                            <div class="content one">
+                                <p>Anyone can apply for a Humm90 Mastercard as long as they;
+                                    <ul>
+                                        <li><span>&#8226;</span> Are 18 years old</li>
+                                        <li><span>&#8226;</span> Earn over $25,000 p.a.</li>
+                                        <li><span>&#8226;</span> Are an Australian Citizen or permanent resident</li>
+                                        <li><span>&#8226;</span> Have a clear credit file</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="checkbox-2" name="checkbox-accordion" />
+                            <label for="checkbox-2">What are the APR and interest charges?</label>
+                            <div class="content two">
+                                <p>There are two different APR’s that you may be charged on your Humm90 Mastercard.</p>
+                                <ul>
+                                    <li><span>&#8226;</span> The Expired Promotional Rate, currently 25.99%, which applies to any outstanding balance that was subject to a Promotional Rate (i.e. an Interest Free offer through a retail partner) at the end of the promotional period.</li>
+                                    <li><span>&#8226;</span> The Card Purchase Rate, currently 23.99%, which applies to any Humm90 Mastercard transactions that were not subject to or paid off within any applicable Interest Free period.</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="checkbox-3" name="checkbox-accordion" />
+                            <label for="checkbox-3">Is there an early payout fee?</label>
+                            <div class="content three">
+                                <p>Customers who pay out their account before the Interest Free period do not incur an early payout fee. It’s completely up to you if you want to pay off your purchase sooner or later.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="checkbox-4" name="checkbox-accordion" />
+                            <label for="checkbox-4">How can I make repayments?</label>
+                            <div class="content four">
+                                <p>There are three ways that you can make repayments to your Humm90 Mastercard:</p>
+                                <ul>
+                                    <li><span>&#8226;</span> Direct debit from your nominated bank account on your statement due date</li>
+                                    <li><span>&#8226;</span> BPAY</li>
+                                    <li><span>&#8226;</span> One time, weekly or fortnightly repayments through Humm90 Self Service</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox" id="checkbox-5" name="checkbox-accordion" />
+                            <label for="checkbox-5">Can I make additional purchases on my Humm90 account?</label>
+                            <div class="content five">
+                                <p>Yes. The next time you wish to shop and take advantage of an Interest Free offer at participating Humm90 retailers, simply have your Customer ID handy, and present this to the sales consultant. Your Customer ID can be found on the back of your Humm90 Mastercard.</p>
+                                <br>
+                                <p>The Store will process and additional purchase for you. For all other purchases at non-Humm90 retailers, simply use your Humm90 Mastercard to make your purchase to take advantage of 110 days Interest Free and no repayments on every Humm90 purchase.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skye-help-number">
+                <div id="block-artwork-approval-notice-block">
+                    <div class="window">
+                        <div class="window-title">
+                            <img class="box-shadow" src="../images/humm90/contact_125x125.png" width="101" height="101">
+                            <p class="help-header">CAN'T FIND THE ANSWER TO A QUESTION?</p>
+                            <p class="help-call">Call 1300 115 533</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container extra-padding direction-column max-large">
+                <div id="block-footer-2" class="footer-bottom">
+                    <img class="bmargin-xl" src="../images/humm90/humm90_logo_112.png">
+                    <div>
+                        <nav role="navigation" aria-labelledby="block-footer-menu" id="block-footer">
+                            <ul>
+                                <li>
+                                    <a href="https://www.humm90.com/au/important-information/">Important Information</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.humm90.com/au/conditions-of-use-and-credit-guide/" target="_blank">Terms of Use</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.flexigroup.com.au" target="_blank">FlexiGroup</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footnote">
+                        <div>
+                            <div id="block-footnotes">
+                                <div>
+                                    <p>humm®90 provided by humm Cards Pty Ltd ABN 31 099 651 877 Australian Credit Licence number 247415.
+                                        Mastercard is a registered trademark, and the circles design is a trademark of Mastercard International Incorporated..</p>
+                                    <hr>
+                                    <p>1. Up to 110 days Interest Free on humm90 Mastercard purchases (excluding cash advances) when you meet the Interest Free Criteria. Failure to make the required payments will result in you no longer meeting the Interest Free Criteria meaning that all new transactions from that day will be interest bearing from the date of the transaction. Any outstanding balance after the Interest Free Period reverts to the humm90 Purchase Rate. Minimum monthly repayment required. Interest (charged at the Expired Promotional Rate) payable on outstanding balances after any Interest Free Period in relation to a Promotional Offer. Approved applicants only. Fees, terms, conditions and minimum finance amount apply, including $99 Annual Fee charged at the time the first debit is charged to your humm90 Account and annually on the anniversary of that date. When you have met the Interest Free Criteria, the Annual Fee must be paid in full within the Interest Free Period or it will attract interest. If you do not meet the Interest Free Criteria the Annual Fee will attract interest from the date the Annual Fee is debited to your humm90 Account. Only available at humm90 retail partners.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var query = window.location.search.substring(1);
+        var qs = parse_query_string(query);
+        console.log(qs);
+        var termSpan = document.getElementById('terms');
+        termSpan.innerHTML = qs.terms + ' months';
+        console.log(qs.channel);
+        if (qs.channel == "both"){
+            document.getElementById("skyeChannel").src="//s3-ap-southeast-2.amazonaws.com/dev-widgets.skyecard.com.au/content/images/onlineinstore.png";
+        }
+        if (qs.channel == "instore"){
+            document.getElementById("skyeChannel").src="//s3-ap-southeast-2.amazonaws.com/dev-widgets.skyecard.com.au/content/images/humm90/shop-instore-with-your-customer-id_351x351.png";
+        }
+        if (qs.pmt == 'mmp'){
+            document.getElementById("emp").style.display = 'none';
+            document.getElementById("mmp").style = '';
+        }
+        if (qs.pmt == 'emp'){
+            document.getElementById("mmp").style.display = 'none';
+            document.getElementById("emp").style = '';
+        }
+        function parse_query_string(query) {
+            var vars = query.split("&");
+            var query_string = {};
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split("=");
+                var key = decodeURIComponent(pair[0]);
+                console.log(key);
+                var value = decodeURIComponent(pair[1]);
+                console.log(value);
+                // If first entry with this name
+                if (typeof query_string[key] === "undefined") {
+                    query_string[key] = decodeURIComponent(value);
+                    // If second entry with this name
+                } else if (typeof query_string[key] === "string") {
+                    var arr = [query_string[key], decodeURIComponent(value)];
+                    query_string[key] = arr;
+                    // If third or later entry with this name
+                } else {
+                    query_string[key].push(decodeURIComponent(value));
+                }
+            }
+            return query_string;
+        }
+    </script>
+    <script>
+        function openSkye() {
+            var query1 = window.location.search.substring(1);
+            var qs1 = query.split("&");
+            var id = qs1[0].toString();
+            window.open('https://apply.flexicards.com.au/seller=' + id.replace('id=', ''), '_blank', '', false);
+        }
+    </script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "inline-block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+    <script>
+        var query = window.location.search.substring(1);
+        var qs = parse_query_string(query);
+
+        if (qs.mobile == 'true') {
+            var containerElements = document.getElementsByClassName('calculator-container');
+
+            for (var x = 0; x < containerElements.length; x++) {
+                containerElements[x].className += ' mobile';
+            }
+
+        }
+
+        function parse_query_string(query) {
+            console.log(query)
+            var vars = query.split("&");
+            var query_string = {};
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split("=");
+                var key = decodeURIComponent(pair[0]);
+                var value = decodeURIComponent(pair[1]);
+                // If first entry with this name
+                if (typeof query_string[key] === "undefined") {
+                    query_string[key] = decodeURIComponent(value);
+                    // If second entry with this name
+                } else if (typeof query_string[key] === "string") {
+                    var arr = [query_string[key], decodeURIComponent(value)];
+                    query_string[key] = arr;
+                    // If third or later entry with this name
+                } else {
+                    query_string[key].push(decodeURIComponent(value));
+                }
+            }
+            return query_string;
+        }
+
+        var selectPlans = document.getElementById("skye-options");
+        console.log(document.getElementById("finance-amount"));
+        var inputAmount = document.getElementById("finance-amount");
+        inputAmount ? inputAmount : '0';
+        console.log('terms:'+qs.terms)
+        inputAmount.setAttribute('value', qs.minAmount);
+        selectPlans.value = qs.terms;
+        callTerms(qs.id, inputAmount, qs.terms)
+
+        function callTerms(merchantId, inputAmount, inputTerm) {
+            console.log(merchantId+':'+inputAmount+':'+inputTerm)
+            var index, i;
+            if (inputAmount.value != null || inputAmount.value != '' || inputAmount.value >= 250) {
+                window.jsonpCallback = function(data) {
+                    // handle requested data from server      		
+                    var selectPlans = document.getElementById("skye-options");
+                    selectPlans.options.length = 0;
+                    if (data.length > 0) {
+                        for (index = 0; index < data.length; index++) {
+                            console.log('from skye:'+data[index].PrefIntPeriod)
+                            console.log('from user'+inputTerm)
+                            if (data[index].PrefIntPeriod <= inputTerm)
+                            {
+                                selectPlans.options[index] = new Option(data[index].PrefIntPeriod + ' Months', data[index].PrefIntPeriod)
+                            }
+                        }
+                    } else {
+                        selectPlans.options[0] = new Option(qs.terms + ' Months', qs.terms)
+                        selectPlans.value = qs.terms;
+                    }
+                };
+                var amtValue = inputAmount.value;
+                var scriptEl = document.createElement('script');
+                scriptEl.setAttribute('src', 'https://seohn3f7dc.execute-api.ap-southeast-2.amazonaws.com/prod/?id=' + qs.id + '&amount=' + amtValue + '&term=&callback=jsonpCallback');
+
+                document.body.appendChild(scriptEl);
+            } else {
+                for (var i = 0; i < selectPlans.length; i++) {
+                    selectPlans.remove(i);
+                }
+                var emptyAmount = document.getElementById("amount-error");
+                emptyAmount.setAttribute('style', '');
+            }
+        }
+
+        document.getElementById('finance-amount').addEventListener('change', function() {
+            console.log('Click');
+            var newAmount = document.getElementById("finance-amount");
+            if (newAmount.value != qs.minAmount) {
+                callTerms(qs.id, newAmount, qs.terms)
+            }
+        });
+    </script>
+    <script>
+        "use strict";
+
+        function show_selected() {
+            var inputAmount = document.getElementById('finance-amount');
+            var amtValue = inputAmount.value;
+            var termSelector = document.getElementById('skye-options');
+            var termValue = termSelector[termSelector.selectedIndex].value;
+
+            var monthlyRoundedDownAmount = compute_monthly(amtValue, termValue)
+
+            var weeklyRoundedDownAmount = compute_weekly(monthlyRoundedDownAmount)
+
+            append_results(amtValue, termValue, weeklyRoundedDownAmount, monthlyRoundedDownAmount)
+                //document.getElementById("calculator").style.display = 'none';
+            document.getElementById("footer").style.display = 'none';
+            document.getElementById("results").style.display = 'block';
+        }
+
+        function compute_monthly(amtValue, termValue) {
+            var monthlyAmountDividedBy = amtValue / termValue;
+            var monthlyRoundedDownAmount = Math.floor(monthlyAmountDividedBy * Math.pow(10, 2)) / Math.pow(10, 2);
+
+            return monthlyRoundedDownAmount
+        }
+
+        function compute_weekly(monthlyRoundedDownAmount) {
+            var weeklyRoundedDownAmount = Math.floor((monthlyRoundedDownAmount * 12 / 52) * Math.pow(10, 2)) / Math.pow(10, 2);
+
+            return weeklyRoundedDownAmount
+
+        }
+
+        function append_results(amtValue, termValue, weeklyRoundedDownAmount, monthlyRoundedDownAmount) {
+            var removeMonthly = document.getElementById('monthly-amount');
+            if (removeMonthly != null) {
+                removeMonthly.parentNode.removeChild(removeMonthly);
+            }
+            var removeWeekly = document.getElementById('weekly-amount');
+            if (removeWeekly != null) {
+                removeWeekly.parentNode.removeChild(removeWeekly);
+            }
+            var removeStatement = document.getElementById('statement');
+            if (removeStatement != null) {
+                removeStatement.parentNode.removeChild(removeStatement);
+            }
+            var monthtlyNode = document.createElement('h2');
+            monthtlyNode.setAttribute('id', 'monthly-amount');
+            var weeklyNode = document.createElement('h2');
+            weeklyNode.setAttribute('id', 'weekly-amount');
+            var weeklyTextNode = document.createTextNode('$ ' + weeklyRoundedDownAmount.toFixed(2));
+            weeklyNode.appendChild(weeklyTextNode);
+            var weeklyLi = document.getElementById('weekly')
+            weeklyLi.insertBefore(weeklyNode, weeklyLi.childNodes[0])
+
+            var monthlyTextNode = document.createTextNode('$ ' + monthlyRoundedDownAmount.toFixed(2));
+            monthtlyNode.appendChild(monthlyTextNode);
+            var monthlyLi = document.getElementById('monthly');
+            monthlyLi.insertBefore(monthtlyNode, monthlyLi.childNodes[0])
+
+            var parStatement = document.createElement('p');
+            parStatement.setAttribute('id', 'statement');
+            var parStatementText = document.createTextNode('If you choose Skye Mastercard to finance a purchase of $' + amtValue + ' over an Interest Free Term of ' + termValue + ' months');
+            parStatement.appendChild(parStatementText);
+            var hr = document.createElement('hr');
+            var resultsBlock = document.getElementById('repayment-results');
+            resultsBlock.insertBefore(parStatement, resultsBlock.childNodes[7]);
+        }
+
+        function show_previous() {
+            document.getElementById("calculator").style.display = 'block';
+            document.getElementById("results").style.display = 'none';
+        }
+
+        document.getElementById('btn').addEventListener('click', show_selected);
+        /*document.getElementById('back').addEventListener('click', show_previous);*/
+    </script>
+</body>
+
+</html>
